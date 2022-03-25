@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events | ThreeAre's</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rakkas&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    
+   
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo4.png" width="200px"></a>  
+            </div>
+    
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="investors-page/index.html">Sponsors</a></li>
+                        <li><a href="wallet.html">Green Wallet</a></li>
+                        <li><a href="login.html">Login</a></li>  
+                    </ul>
+                </nav>
+            <a href="cart.html"><img src="images/cart.png" width="25px" height="25px"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    
+    
+     <div class="container" style="padding: 0px">
+        <div class="row" style="padding: 0px">
+            <img src="images/Wallet%20Point.png" width="100%" height="10%">
+        </div>
+    </div>
+    
+    
+<!-----------events body--------->
+    <div class="small-container">
+        
+        
+        <div class="row row-2">
+            <h2 style="font-family:'Rakkas'; font-size:300%; color:green">Event Details</h2>
+        </div>
+
+        
+        <table>
+            <tr>
+                <th>Upcoming Events</th> 
+                <th>Participate</th> 
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+        
+                        <div>
+                            <p>All Metal Recycling Drive</p> 
+                            <small>Date: 14/11/2021</small><br>   
+                            <small>Green Wallet Points: 200</small>
+                            <span class = "material-icons custom" style="font-size:1em; color: green">account_balance_wallet</span>
+
+                        </div>
+                    </div>
+                
+                </td>
+                <td><a class="btn">Register</a></td>  
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                  
+                        <div>
+                            <p>Clean The Earth Campaign</p>   
+                            <small>Date: 28/11/2021</small><br>   
+                            <small>Green Wallet Points: 200</small>
+                            <span class = "material-icons custom" style="font-size:1em; color: green">account_balance_wallet</span>
+                          
+                        </div>
+                    </div>
+                
+                </td>
+                <td><a class="btn">Register</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                  
+                        <div>
+                            <p>Run For Renewal</p>   
+                            <small>Date: 12/12/2021</small><br>   
+                            <small>Green Wallet Points: 200</small>
+                            <span class = "material-icons custom" style="font-size:1em; color: green">account_balance_wallet</span>
+                   
+                        </div>
+                    </div>
+                
+                </td>
+                <td><a class="btn">Register</a></td>
+            </tr> 
+            <tr>
+                <td>
+                    <div class="cart-info">
+                  
+                        <div>
+                            <p>Cycle For Change</p>    
+                            <small>Date: 26/12/2021</small><br>   
+                            <small>Green Wallet Points: 200</small>
+                            <span class = "material-icons custom" style="font-size:1em; color: green">account_balance_wallet</span>
+                   
+                        </div>
+                    </div>
+                
+                </td>
+                <td><a class="btn">Register</a></td>
+            </tr> 
+        </table>
+    </div>
+
+<!-----------footer----------->
+            <div class="footer">
+                <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download our App</h3>
+                        <p>Download App for Android and IOS</p>
+                        <div class="app-logo">
+                            <img src="images/play-store.png">
+                            <img src="images/app-store.png">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/logo4.png" width="300px"> 
+                        <p>Embrace Sustainability</p> 
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li> 
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>YouTube</li> 
+                        </ul> 
+                    </div>
+                </div>
+                    <hr>
+                    <p>Copyright 2021 - ThreeAre's</p> 
+            </div>
+        </div>
+
+<!-----js for toggle menu--------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        
+        MenuItems.style.maxHeight = "0px";
+        
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px"; 
+                }
+        }
+    </script> 
+</body>
+</html>
